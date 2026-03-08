@@ -1,0 +1,6 @@
+import time
+import os
+
+while True:
+    os.system("ffmpeg -re -stream_loop -1 -i video.mp4 -f flv rtmp://youtube-server/livekey")
+    time.sleep(5)
